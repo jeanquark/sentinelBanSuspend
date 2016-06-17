@@ -1,10 +1,9 @@
-# Sentinel 2 extended with ban/suspend features and OAuth service
+# Sentinel 2 extended with ban/suspend features
 
-This repo adds a couple of useful features to the [Sentinel 2](https://cartalyst.com/manual/sentinel/2.0) authorization and authentication package for [Laravel 5.2](https://laravel.com/docs/5.2). There are 3 of them:
+This repo adds a couple of useful features to the [Sentinel 2](https://cartalyst.com/manual/sentinel/2.0) authorization and authentication package for [Laravel 5.2](https://laravel.com/docs/5.2). To see the full explanation, head over to [this](http://www.jm.kleger.com/add-suspend-and-ban-features-to-sentinel-2) article.
 
-1. You can ban a registered user to prevent her from signing in to your application
+1. You can ban an abusive registered user to prevent her from signing in to your application
 2. You can suspend a registered user for a given time period
-3. You make it possible for a new user to register and sign in to your application via third party websites like Google, Facebook, Github or LinkedIn 
 
 Wanna give it a shot? Follow the (very straightforward) installation process and get up and running with a fully functional access control service. 
 
@@ -14,7 +13,7 @@ Make sure you have a running web server on your computer (*xampp* for example). 
 
 First clone the repo
 ```
-git clone https://jeanquark@bitbucket.org/jeanquark/sentinel.git
+git clone https://github.com/jeanquark/sentinelBanSuspend.git
 ```
 
 Install all dependencies
@@ -52,10 +51,15 @@ To make use of the OAuth service, you need to register your app to the service p
 
 ## Screenshots
 
-![homepage](https://bitbucket.org/jeanquark/sentinel/raw/master/public/homepage.png "Homepage")
-![register](https://bitbucket.org/jeanquark/sentinel/raw/master/public/register.png "Register")
-![signin](https://bitbucket.org/jeanquark/sentinel/raw/master/public/signin.png "Sign in")
-![admin](https://bitbucket.org/jeanquark/sentinel/raw/master/public/admin.png "Admin")
+Admin area:
+![admin](https://github.com/jeanquark/sentinelBanSuspend/raw/master/public/admin.png "Admin area")
+
+Suspended user signin tryout:
+![suspended](https://github.com/jeanquark/sentinelBanSuspend/raw/master/public/suspended.png "Suspended user")
+
+Banned user signin tryout:
+![banned](https://github.com/jeanquark/sentinelBanSuspend/raw/master/public/banned.png "Banned user")
+
 
 ### License
 Please refer to [Sentinel 2 The BSD 3-Clause License](https://github.com/cartalyst/sentinel/blob/2.0/LICENSE).

@@ -34,7 +34,7 @@
 	                {!! Form::submit('Sign In', array('class'=>'btn btn-success')) !!}
 	                <a class="btn btn-link" href="{{ route('sentinel.forgot.form') }}">Forgot Password</a>
 					<br/>
-
+					<br/>
 					<p>To sign in as administrator, please enter :
 						@if (!empty($user))
 							<ul>
