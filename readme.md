@@ -1,6 +1,6 @@
 # Sentinel 2 extended with ban/suspend features
 
-This repo adds a couple of useful features to the [Sentinel 2](https://cartalyst.com/manual/sentinel/2.0) authorization and authentication package for [Laravel 5.2](https://laravel.com/docs/5.2). To see the full explanation, head over to [this](http://www.jm.kleger.com/add-suspend-and-ban-features-to-sentinel-2) article.
+This repo adds a couple of useful features to the [Sentinel 2](https://cartalyst.com/manual/sentinel/2.0) authorization and authentication package for [Laravel 5.2](https://laravel.com/docs/5.2). To have all the steps explined, head over to [this](http://www.jm.kleger.com/post/add-suspend-and-ban-features-to-sentinel-2) article. Those new features are:
 
 1. You can ban an abusive registered user to prevent her from signing in to your application
 2. You can suspend a registered user for a given time period
