@@ -16,14 +16,9 @@ First clone the repo
 git clone https://github.com/jeanquark/sentinelBanSuspend.git
 ```
 
-Install all dependencies
+cd to the newly created folder and install all dependencies
 ```
 composer install
-```
-
-Generate application key 
-```
-php artisan key:generate
 ```
 
 Create a database that will hold sentinel tables. You can do so with phpmyadmin.
@@ -38,9 +33,12 @@ Now fill the tables
 php artisan db:seed
 ```
 
+Generate application key 
+```
+php artisan key:generate
+```
+
 Nice. You should be good to go. Open your web browser and go to the login page of the application project (if you followed the above-mentioned directives with xampp, path is: http://localhost/sentinel/public/login). Enter provided admin credentials and start managing users from the admin portal.
-Quick note:
-To make use of the OAuth service, you need to register your app to the service provider. I explain how to do it as well as all the steps needed to go from Sentinel to Sentinel OAuth in this [blog post](http://www.jmkleger.com/post/add-oauth-to-sentinel-2).
 
 ## Features
 
@@ -54,10 +52,10 @@ To make use of the OAuth service, you need to register your app to the service p
 Admin area:
 ![admin](https://github.com/jeanquark/sentinelBanSuspend/raw/master/public/admin.png "Admin area")
 
-Suspended user signin tryout:
+Suspended user sign in attempt:
 ![suspended](https://github.com/jeanquark/sentinelBanSuspend/raw/master/public/suspended.png "Suspended user")
 
-Banned user signin tryout:
+Banned user sign in attempt:
 ![banned](https://github.com/jeanquark/sentinelBanSuspend/raw/master/public/banned.png "Banned user")
 
 
